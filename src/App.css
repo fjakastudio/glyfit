@@ -1,3 +1,56 @@
-.App {
-  text-align: center;
+:root {
+  --main: #EFEEE8;
+  --secondary: #1E1E1E;
+  --secondary-50: rgba(30,30,30,.5);
+  --secondary-25: rgba(30,30,30,.25);
+  --secondary-10: rgba(30,30,30,.10);
+  --vidid: #772D8B;
+  --vivid-secondary: #E9806E;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main: #1E1E1E;
+    --secondary: #EFEEE8;
+    --secondary-50: rgba(239,238,232,.5);
+    --secondary-25: rgba(239,238,232,.25);
+    --secondary-10: rgba(239,238,232,.10);
+    --vidid: #35143E;
+    --vivid-secondary: #E9806E;
+  }
+}
+
+.swear {
+  font-family: swear-display-cilati, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Druk Web';
+  src: url('fonts/Druk-Bold-Web.woff2') format('woff2'),
+  url('fonts/Druk-Bold-Web.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+}
+  
+  
+h1 {
+  font-family: 'Druk Web';
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+}
+  
+  
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-kerning: normal;
+  -moz-font-feature-settings: "kern", "liga", "clig", "calt";
+  -ms-font-feature-settings: "kern", "liga", "clig", "calt";
+  -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
+  font-feature-settings: "kern", "liga", "clig", "calt";
 }
